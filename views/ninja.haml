@@ -1,0 +1,8 @@
+.container
+  .entry.well.well-large{:style => 'margin-top: 250px;'}
+    %p.lead
+      %span Hello
+      %span.normal-name
+        %strong&= @normal_name
+        %span your Ninja name is:
+      %h1.ninja-name{:style => 'color: #b94a48;'}&= @ninja_name
