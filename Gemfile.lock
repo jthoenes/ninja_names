@@ -9,6 +9,8 @@ GEM
     autotest-growl (0.2.16)
     diff-lcs (1.2.4)
     ffi (1.9.0)
+    haml (4.0.3)
+      tilt
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -35,5 +37,6 @@ DEPENDENCIES
   autotest
   autotest-fsevent
   autotest-growl
+  haml
   rspec
   sinatra

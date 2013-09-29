@@ -1,4 +1,5 @@
 class Ninjify
+  include Singleton
 
   NINJA_ALPHABET = {
       'a' => 'ka',
