@@ -11,22 +11,28 @@ end
 
 __END__
 
-@@ layout
+@@ ninja
 !!! 5
 %html
   %head
-    %script{:type => "text/javascript", :src  => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
-
-  %body
-    = yield
+    %title
+      The Ninja Name of
+      = @normal_name
+      is
+      = @ninja_name
     %link{:rel=>"stylesheet",:type=>"text/css",:href=>"//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"}
 
-@@ ninja
-.container
-  .entry.well.well-large{:style => 'margin-top: 250px;'}
-    %p.lead
-      %span Hello
-      %span.normal-name
-        %strong&= @normal_name
-      %span your Ninja name is:
-    %h1.ninja-name{:style => 'color: #b94a48;'}&= @ninja_name
+  %body
+    .container
+      .entry.well.well-large{:style => 'margin-top: 250px;'}
+        %p.lead
+          %span Hello
+          %span.normal-name
+            %strong&= @normal_name
+          %span your Ninja name is:
+        %h1.ninja-name{:style => 'color: #b94a48;'}&= @ninja_name
+
+      %script{:type => "text/javascript", :src  => "//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
+
+
+
