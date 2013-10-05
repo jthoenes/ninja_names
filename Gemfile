@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra'
 gem 'haml'
+gem 'flickraw'
 
 gem 'shotgun', group: 'development'
 

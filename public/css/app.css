@@ -1,0 +1,9 @@
+.ninja-image {
+	width: 100%;
+	text-align: right;
+}
+
+.ninja-image .credits, .ninja-image .credits a {
+	color: #282828 !important;
+	font-style: italic;
+}

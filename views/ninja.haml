@@ -6,3 +6,10 @@
         %strong&= @normal_name
         %span your Ninja name is:
       %h1.ninja-name{:style => 'color: #b94a48;'}&= @ninja_name
+    %div.ninja-image
+      %img.img-rounded{:src => @ninja_image.url, :width => @ninja_image.width, :height => @ninja_image.height }
+      %p.credits
+        %small
+          ="Image <em>#{@ninja_image.author}</em>, Creative Commons License:"
+          %br
+          %a{:href => @ninja_image.photo_page}= @ninja_image.photo_page
