@@ -5,6 +5,8 @@
 
 .share div {
 	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 /* Image Styling */
