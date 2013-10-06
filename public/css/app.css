@@ -3,6 +3,10 @@
 	margin-bottom: 2.5em;
 }
 
+.share div {
+	display: inline-block;
+}
+
 /* Image Styling */
 
 .ninja-image {
@@ -39,4 +43,10 @@
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box
+}
+
+/* Share Buttons */
+.spread a {
+	height: 200px;
+	display: block;
 }
