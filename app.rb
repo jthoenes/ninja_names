@@ -1,6 +1,7 @@
 require 'singleton'
 require 'sinatra'
 require 'open-uri'
+require 'zlib'
 require 'bundler'
 Bundler.require
 

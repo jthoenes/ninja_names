@@ -39,7 +39,9 @@ class NinjaImage
 
   private
   def get_photo_id(ninja_name)
-    idx = ninja_name.hash % NINJA_FLICKR_IDS.size
+    hash = Zlib.crc32(ninja_name)
+    var = hash % NINJA_FLICKR_IDS.size
+    idx = var
     NINJA_FLICKR_IDS[idx]
   end
 
