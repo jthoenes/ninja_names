@@ -5,7 +5,12 @@
 
 .share div {
 	display: inline-block;
+	vertical-align: top;
 	margin: 0 10px;
+}
+
+.share .box {
+	border: solid red 1px;
 }
 
 /* Image Styling */
