@@ -1,3 +1,10 @@
+.container {
+	margin-top: 5em;
+	margin-bottom: 2.5em;
+}
+
+/* Image Styling */
+
 .ninja-image {
 	width: 100%;
 	text-align: right;
@@ -6,4 +13,30 @@
 .ninja-image .credits, .ninja-image .credits a {
 	color: #282828 !important;
 	font-style: italic;
+}
+
+/*Enter your Ninja Name ...*/
+
+.enter-name {
+	overflow: hidden;
+}
+
+.enter-name input {
+	width: 100%;
+}
+
+.enter-name span {
+	display: block;
+	overflow: hidden;
+	padding: 0 5px
+}
+
+.enter-name button {
+	float: right
+}
+
+.enter-name input, .formLine enter-name {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
 }

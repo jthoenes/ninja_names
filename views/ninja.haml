@@ -1,15 +1,26 @@
+- if @ninja_name
+  .container
+    .entry.well.well-large
+      %p.lead
+        %span Hello
+        %span.normal-name
+          %strong&= @normal_name
+          %span your Ninja name is:
+        %h1.ninja-name{:style => 'color: #b94a48;'}&= @ninja_name
+      %div.ninja-image
+        %img.img-rounded{:src => @ninja_image.url, :width => @ninja_image.width, :height => @ninja_image.height }
+        %p.credits
+          %small
+            ="Image <em>#{@ninja_image.author}</em>, Creative Commons License:"
+            %br
+            %a{:href => @ninja_image.photo_page}= @ninja_image.photo_page
+
+
 .container
-  .entry.well.well-large{:style => 'margin-top: 250px;'}
-    %p.lead
-      %span Hello
-      %span.normal-name
-        %strong&= @normal_name
-        %span your Ninja name is:
-      %h1.ninja-name{:style => 'color: #b94a48;'}&= @ninja_name
-    %div.ninja-image
-      %img.img-rounded{:src => @ninja_image.url, :width => @ninja_image.width, :height => @ninja_image.height }
-      %p.credits
-        %small
-          ="Image <em>#{@ninja_image.author}</em>, Creative Commons License:"
-          %br
-          %a{:href => @ninja_image.photo_page}= @ninja_image.photo_page
+  .well.well-large
+    %form.form-inline{:action => '/ninja', :method => 'POST'}
+      %fieldset.enter-name
+        %legend.lg Want to find out your Ninja name?
+        %button.btn.btn-primary.btn-lg{:type=>"submit"} Submit
+        %span
+          %input.input-lg{:type => "text", :name => 'normal_name', :placeholder => 'Enter your name ...'}
