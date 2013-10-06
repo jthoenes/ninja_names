@@ -14,11 +14,11 @@
             ="Image <em>#{@ninja_image.author}</em>, Creative Commons License:"
             %br
             %a{:href => @ninja_image.photo_page}= @ninja_image.photo_page
-      .share{:style => 'margin-top: 20px;'}
-        .facebook-share{:style => 'margin: 10px;'}
+      .share
+        .facebook-share
           %a{:href => "http://www.facebook.com/sharer.php", :name => "fb_share", :type => "button"} Share
           %script{:src => "http://static.ak.fbcdn.net/connect.php/js/FB.Share", :type => "text/javascript"}
-        .twitter-share{:style => 'margin: 10px;'}
+        .twitter-share
           %a.twitter-share-button{:data => {:text => "My #Ninja name is #{@ninja_name}! #{request.url}",
           :via => 'jthoenes'}, :href => "http://twitter.com/share"} Tweet
           %script{:src => "http://platform.twitter.com/widgets.js", :type => "text/javascript"}
